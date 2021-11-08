@@ -1,0 +1,36 @@
+<div class="d-flex">
+  <ul
+    ngbNav
+    #nav="ngbNav"
+    [(activeId)]="active"
+    class="nav-pills"
+    orientation="vertical"
+  >
+    <li ngbNavItem="0">
+      <a ngbNavLink>{{ data[0].name }}</a>
+      <ng-template ngbNavContent>
+        <img [src]="data[0].image" alt="{{ data[0].name }}" />
+        <h2>Price: ${{ data[0].price }}</h2>
+        <p>{{ data[0].description }}</p>
+      </ng-template>
+    </li>
+    <li ngbNavItem="1">
+      <a ngbNavLink>{{ data[1].name }}</a>
+      <ng-template ngbNavContent>
+        <img [src]="data[1].image" alt="{{ data[1].name }}" />
+        <h2>Price: ${{ data[1].price }}</h2>
+        <p>{{ data[1].description }}</p>
+      </ng-template>
+    </li>
+    <li ngbNavItem="2">
+      <a ngbNavLink>{{ data[2].name }}</a>
+      <ng-template ngbNavContent>
+        <img [src]="data[2].image" alt="{{ data[2].name }}" />
+        <h2>Price: ${{ data[2].price }}</h2>
+        <p>{{ data[2].description }}</p>
+      </ng-template>
+    </li>
+  </ul>
+
+  <div [ngbNavOutlet]="nav" class="ml-4"></div>
+</div>

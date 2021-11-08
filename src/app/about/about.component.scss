@@ -1,0 +1,29 @@
+div {
+  font-family: "Segoe UI";
+  padding: 1em;
+}
+
+.title {
+  text-align: center;
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+
+.values {
+  float: left;
+  max-width: 40%;
+  margin: 2em;
+}
+
+.values > p {
+  font-style: italic;
+  font-size: larger;
+  padding-left: 2em;
+}
+
+#img {
+  position: fixed;
+  bottom: 3em;
+  right: 4em;
+  width: 35em;
+}
