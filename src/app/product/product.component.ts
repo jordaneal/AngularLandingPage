@@ -8,7 +8,7 @@ import { AppComponent } from '../app.component';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-  active = 'top';
+  active = '0';
   data: any = [
     { 
       name: "Völkl Revolt", 
